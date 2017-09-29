@@ -1,0 +1,508 @@
+/* 1。因为大部分都是12px 666666 */
+body{
+    font-size: 12px;
+    color: #666666;
+}
+
+/* <!-- 1.login部分 欢迎来到天天生鲜 --> */
+.login{
+    height: 29px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #dddddd;
+}
+.login-content{
+    width: 1200px;
+    height: 29px;
+    margin: 0 auto;
+    /* background: lightblue; */
+}
+
+/* 1.1左侧天天生鲜居中 */
+.login-content h3{
+    line-height: 29px;
+}
+
+/* 1.2右侧：div  */
+.login-content .rightorder{
+    width: 250px;
+    height: 29px;
+    /* background: lightcoral; */
+
+    line-height: 29px;
+}
+/* 1.2.1设置和登录有关的属性 */
+.rightorder .logined{
+    display: none;
+}
+.unlogin{
+   
+}
+.logined a{
+    color: orange;
+}
+
+/* 设置竖线 左右间距 */
+.unlogin span,.myorder span{
+    margin: 0 10px;
+}
+
+/* 设置a的灰色 */
+.unlogin a,.myorder a{
+    color: #666666;
+}
+.unlogin a:hover,.myorder a:hover{
+    color: orange;
+}
+
+/* 2.search 部分 */
+.search{
+    height: 90px;
+    /* background: lightgoldenrodyellow; */
+}
+.search-content{
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    /* background: lightblue; */
+}
+
+/* logo左侧 */
+.search-content .logo{
+    margin-left: 17px;
+    /* 行内元素不支持margin-top */
+    /* display: block; 需要清除浮动 */
+    display: inline-block;
+    margin-top: 29px; 
+
+    float: left;
+}
+
+/* 中间的search */
+.searchbar{
+    width: 616px;
+    height: 38px;
+    border: 1px solid #37ab40;
+
+    float: left;
+    margin-left: 120px;
+    margin-top: 36px;
+}
+
+.searchbar .txt{
+    width: 516px;
+    height: 38px;
+    line-height: 38px;
+    background: url("../images/search.png") no-repeat 12px 10px;
+    text-indent: 40px;
+}
+
+.searchbar .btn{
+    width: 100px;
+
+    /* 1.防止块溢出
+    width: 96px;     */
+
+    height: 38px;
+    background: #37ab40;
+
+    color: white;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+
+    /* 2.宽度超过了边界 自动换行 */
+    float: right;
+}
+
+/* 右侧的购物车 */
+.buycar{
+    width: 200px;
+    height: 40px;
+    /* background: lightcoral; */
+
+    float: right;
+    margin-top: 36px;
+}
+
+.buycar a{
+    /* 因为要给 行内元素 设置宽高 改变类型 */
+    display: inline-block;
+    width: 158px;
+    height: 38px;
+    border: 1px solid #dddddd;
+
+    color: #37ab40;
+    font-size: 14px;
+    line-height: 38px;
+    background: url("../images/buycar.png") no-repeat 14px 8px;
+    text-indent: 56px;
+}
+
+.buycar span{
+     /* 因为要给 行内元素 设置宽高 改变类型 */
+     display: inline-block;
+     width: 40px;
+     height: 40px;
+     background: #ff8800;
+
+     font-size: 18px;
+     color: white;
+     line-height: 40px;
+     text-align: center;
+
+
+     /* 因为超出边界 所以要改变宽度或者浮动 */
+     float: right;
+}
+
+/* 3.全部商品分类： */
+.category{
+    height: 40px;
+    margin-top: 26px;
+    border-bottom: 2px solid #37ab40;
+    /* background: lightcoral; */
+}
+.category-content{
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    /* background: lightgoldenrodyellow; */
+}
+
+/* 3.1 左边全部商品分类部分 */
+.category-content .all{
+
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background: #37ab40;
+
+    /* 设置浮动 为了给首页list 找边界 */
+    float: left;
+    
+}
+
+.category-content .catelist{
+    float: left;
+    width: 215px;
+    height: 40px;
+    /* background: lightseagreen; */
+    
+    margin-left: 35px;
+    line-height: 40px;
+
+}
+.catelist li{
+    float: left;
+    font-size: 14px;
+
+}
+.catelist li span{
+    margin: 0 20px;
+
+}
+.catelist li a{
+    color: #666666;
+
+}
+
+/* 4.slide */
+.slide{
+    height: 270px;
+    /* background: lightcoral; */
+
+}
+.slide-content{
+    width: 1200px;
+    height: 270px;
+    margin: 0 auto;
+    /* background: lightblue; */
+}
+/* 4.1左侧的水果列表 */
+.friutlist{
+    width: 200px;
+    height: 270px;
+    /* background: lightgreen; */
+    
+    float: left;
+}
+.friutlist li{
+    width: 198px;
+    height: 44px;
+    border: 1px solid #f7f7f7;
+    border-top: 0;
+
+    text-align: center;
+    line-height: 44px;
+    background: url("../images/sprit.png") no-repeat 32px 11px;
+}
+.friutlist li:nth-of-type(2){
+    background-position-y: -41px;
+}
+.friutlist li:nth-of-type(3){
+    background-position-y: -91px;
+}
+.friutlist li:nth-of-type(4){
+    background-position-y: -141px;
+}
+.friutlist li:nth-of-type(5){
+    background-position-y: -191px;
+}
+.friutlist li:nth-of-type(6){
+    background-position-y: -241px;
+}
+
+
+.friutlist li a{
+    font-size: 14px;
+    background: url("../images/sprit.png") no-repeat 164px -391px;
+    /* 由于背景箭头 显示的位置在最右侧 所以改变大小 */
+    display: inline-block;
+    width: 198px;
+    height: 44px;
+
+}
+
+/* 4.2 中间的部分 */
+.slidepic{
+    width: 760px;
+    height: 270px;
+    
+
+    float: left;
+    overflow: hidden;
+    position: relative;
+
+}
+.slidepic .slidelist{
+    width: 3040px;
+    height: 270px;
+}
+.slidelist li{
+    float: left;
+}
+/* 4.2.2左右按钮 */
+.leftbtn{
+
+    /* 注意：如果在DIV的下面 是因为ul 是他的兄弟元素
+            如果在div的左上角的位置 是因为ul float; 不占位置
+    */
+    width: 25px;
+    height: 25px;
+    background: url("../images/sprit.png") no-repeat 0px -500px;
+
+    position: absolute;
+    bottom: 123px;
+    left: 12px;
+    /* 显示小手 */
+    cursor: pointer;
+
+}
+
+.rightbtn{
+    
+       
+        width: 25px;
+        height: 25px;
+        background: url("../images/sprit.png") no-repeat 0px -450px;
+    
+        position: absolute;
+        bottom: 123px;
+        right: 12px;
+        /* 显示小手 */
+        cursor: pointer;
+    
+    }
+
+    /* 4.2.3小圆点 */
+    .pointslist{
+        height: 11px;
+        /* background: black; */
+
+        /* 绝对定位 脱离文档流，父元素的百分百宽度都失效了 主动设置宽度 */
+        width: 760px;
+        position: absolute;
+        bottom: 9px;
+        left: 0px;
+        text-align: center;
+        
+    }
+
+    .pointslist li{
+        width: 11px;
+        height: 11px;
+        background: red;
+        border-radius: 50%;
+
+        /* 不使用浮动 是因为 浮动元素不能居中 */
+        /* float: left; */
+        display: inline-block;
+
+    }
+
+    .pointslist .active{
+        background: green;
+    }
+
+    /* 4.3右侧广告图片 */
+    .rightpic{
+        font-size: 0;
+    }
+
+/* 5.foods商品详情 */
+.foods{
+    height: 335px;
+    margin-top: 25px;
+    /* background: lightblue; */
+
+}
+.foods-content{
+    width: 1200px;
+    height: 335px;
+    margin: 0 auto;
+    /* background: lightcoral; */
+}
+/* 上面的文字分类 */
+.foods-content .head{
+    border-bottom: 1px solid #37ab40;
+    height: 33px;
+}
+/* 5.2左侧广告图片 */
+.leftad{
+    width: 200px;
+    height: 300px;
+
+    float: left;
+
+}
+
+/* .headlist li .sea{
+    width: 70px;
+    height: 20px;
+
+    font-size: 16px;
+    
+} */
+
+/* 列表 */
+.headlist li{
+    float: left;
+    font-size: 12px;
+  
+}
+.headlist li span{
+    margin: 0 30px;
+}
+
+
+/* 更多 */
+.headright{
+    float: right;
+    font-size: 14px;
+}
+
+
+
+
+/* 5.3 右侧的列表 */
+.foodslist{
+    float: left;
+    width: 1000px;
+    height: 300px;
+}
+
+.foodslist li{
+    float: left;
+    width: 249px;
+    height: 299px;
+    border-bottom: 1px solid #666666;
+    border-right: 1px solid #666666;
+    text-align: center;
+
+}
+/* 基围虾文字 */
+.foodslist li h5{
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+
+    margin-bottom: 10px;   
+}
+/* 价格39.9 */
+.foodslist li div{
+    /* background: green; */
+    font-size: 20px;
+    color: #666666;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+
+    margin-top: 13px;
+
+}
+
+/* 5.底部 */
+.bottom{
+    height: 145px;
+    /* background: lightblue; */
+    margin-top: 30px;
+    border-top: 2px solid #4ab14e;
+}
+.oneline{
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    /* background: lightblue; */
+    margin-left: 40%;
+    margin-top: 20px;
+    /* margin: 0 auto; */
+    
+}
+
+.oneline li {
+    float: left;
+   
+    /* text-align: center; */
+
+}
+
+.oneline li a{
+    font-size: 13px;
+    color: #4e4e4e;
+}
+
+.oneline li span{
+    margin: 0 6px;
+
+}
+
+.twoline{
+    width: 450px;
+    height: 30px;
+    line-height: 30px;
+    /* background: lightblue; */
+    /* margin: 0 auto; */
+    margin-left: 35%;
+    margin-top: 3px;
+    font-size: 13px;
+    color: #4e4e4e;
+    
+}
+
+.threeline{
+    width: 450px;
+    height: 30px;
+    line-height: 30px;
+    /* background: lightblue; */
+    /* margin: 0 auto; */
+    margin-left: 41%;
+    margin-top: 3px;
+    font-size: 13px;
+    color: #4e4e4e;
+    
+}

@@ -1,0 +1,25 @@
+.box{
+    width: 900px;
+    height: 900px;
+    border: 1px solid red;
+
+    /* 元素溢出  全部可见*/
+    /* overflow: visible; */
+
+    /* 隐藏 删除多余的内容 */
+    /* overflow: hidden; */
+
+    /* 滚动查看 */
+    overflow: scroll;
+
+    /* overflow: auto; */
+
+
+
+
+
+
+
+
+
+}

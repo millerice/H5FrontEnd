@@ -1,0 +1,54 @@
+
+/* 1.将系统有的margin padding 的标签归零0*/
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,dt,li,input{
+    margin: 0;
+    padding: 0;
+}
+/* 2.列表的小圆点 */
+ul,ol{
+    list-style: none;
+}
+/* 3.a 下划线 */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* 4.伪类 */
+.clearfix:after,.clearfix:before{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+
+/* 5.浮动 */
+.lf{
+    float: left;
+}
+.rf{
+    float: right;
+}
+
+/* 6.标题标签自带的样式 */
+h1,h2,h3,h4,h5,h6{
+    font-size: 100%;
+    font-weight: normal;
+}
+
+
+/* 7.input */
+input{
+    outline: none;
+    border: 0px;
+    
+}

@@ -1,0 +1,40 @@
+.box{
+    width: 900px;
+    height: 900px;
+    border: 1px solid red;
+
+    /* 1.文本对齐 */
+    text-align: left;
+
+    /* 2.首行缩进 */
+    /* text-indent: 32px; */
+    /* em 是文字倍数 */
+    text-indent: 2em;
+    /* 3.是否斜体 */
+    font-style: italic;
+
+    /* 4.是否加粗 */
+    font-weight: bold;
+
+    font-size: 10px;
+    line-height: 20px;
+    font-family: "microsoft yahei";
+
+
+    /* 连写 一定规则 */
+    
+         /* 加粗  斜体   字大小/行高   字体样式 */
+    /* font: normal italic 10px/20px "microsoft yahei"; */
+
+    /* ID选择器
+    
+    #three{
+        color: blue;
+
+    }
+
+    */
+    
+
+
+}
